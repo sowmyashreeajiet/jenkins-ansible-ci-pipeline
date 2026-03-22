@@ -5,12 +5,12 @@
 
   - name: Create deployment directory
     file:
-      path: /home/jenkins_home/deploy
+      path: /var/jenkins_home/deploy
       state: directory
       mode: '0755'
 
   - name: Copy artifact
     copy:
       src: target/demo-app-1.0-SNAPSHOT.jar
-      dest: /home/jenkins_home/deploy/demo-app.jar
+      dest: /var/jenkins_home/deploy/demo-app.jar
 
