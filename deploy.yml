@@ -11,6 +11,6 @@
 
   - name: Copy artifact
     copy:
-      src: target/demo-app-1.0-SNAPSHOT.jar
-      dest: /var/jenkins_home/deploy/demo-app.jar
+      src: target/jenkins-ansible-1.0-SNAPSHOT.jar
+      dest: /var/jenkins_home/deploy/jenkins-ansible.jar
 
